@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  padding-left: 0px;
+  margin-bottom: 0rem;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+span.avatar {
+  background: #f18500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.header__navbar {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  /* Style for the dropdown */
+  /* Arrow flipping */
+  /* Add transition for smooth arrow flip */
+}
+.header__navbar--left a {
+  padding: 15px;
+  display: block;
+  font-weight: 600;
+}
+.header__navbar--left a i {
+  font-size: 22px;
+}
+.header__navbar--right a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+}
+.header__navbar .dropdown {
+  position: relative;
+}
+.header__navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1;
+  min-width: 200px;
+}
+.header__navbar .dropdown-menu li {
+  list-style: none;
+  padding: 10px 20px;
+}
+.header__navbar .dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+.header__navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header__navbar .dropdown:hover .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.header__navbar .arrow {
+  transition: transform 0.3s;
+}
+.header .dropdown-menu a {
+  padding: 0px 0px 0px 0px;
+}
+
+.banner-profile--details {
+  background-color: #f2f2f2;
+  border: 1px solid #c1c1c1;
+}
+.banner-profile--details--img img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.my-learning {
+  background-color: #02042b;
+}
+.my-learning a.active {
+  border-bottom: 5px solid #f18500;
+}
+.my-learning nav ul li {
+  list-style-type: none;
+}
+.my-learning nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 20px 0px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  height: 2.7rem;
+}
+
+.my-learning-tag .nav-link {
+  color: #02042b;
+  margin-right: 20px;
+  background: #edf2fa;
+}
+.my-learning-tag .nav-link.active {
+  background-color: #f18500;
+}
+
+.courses {
+  /* Chrome, Safari, Opera */
+  /* Firefox */
+}
+.courses__details--content a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #02042b;
+  text-decoration: none;
+}
+.courses progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  /* Background of the bar */
+}
+.courses progress::-webkit-progress-value {
+  background-color: #4caf50;
+  /* Color of the progress */
+}
+.courses progress::-moz-progress-bar {
+  background-color: #4caf50;
+  /* Color of the progress */
+}
+.courses progress {
+  width: 100%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #e0e0e0; /* Background of the bar */
+}
+
+.footer {
+  background-color: #2d2f31;
+}
+.footer h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.footer a {
+  display: block;
+  line-height: 36px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer p {
+  line-height: 30px;
+  color: #fff;
+}
+.footer__nav a {
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer .line {
+  height: 2px;
+  background-color: #EFEFEF;
+}
+
+.inner--banner {
+  position: relative;
+}
+.inner--banner img {
+  width: 100%;
+}
+.inner--banner__details {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  right: 0;
+  bottom: 30px;
+}
+.inner--banner__details h1 {
+  font-size: 44px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+
+.learning-details ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.learning-details ul li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 14px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #f18500;
+  border-radius: 50%;
+}
+
+.login-register input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-register label {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin: 15px 0px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.login-register .btn-submit {
+  background-color: #f18500;
+  color: #fff;
+  border: 1px solid #f18500;
+  font-weight: 600;
+}
+.login-register .form-container {
+  background-color: #EFEFEF;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.summer-camp {
+  height: 400px;
+}
+.summer-camp img {
+  width: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  height: 100%;
+}
+
+.courses_available__details {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.courses_available__details img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.courses_available__details .bg-one {
+  background-color: #f18500;
+}
+.courses_available__details h5 {
+  margin-bottom: 0;
+}
+.courses_available__content {
+  background: #efefef;
+  padding: 0px 0px 15px 0px;
+}
+.courses_available__content p {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  background-color: #efefef;
+  display: block;
+  padding: 8px 20px;
+}
+.courses_available__content p a {
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+.camp-title {
+  background-color: #f18500;
+  color: #fff;
+}
+
+.cic-approch img {
+  width: 100%;
+}
+
+.offer h1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.offer h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.offer p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.end-to-end h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.end-to-end span {
+  font-size: 30px;
+  color: #ffc107;
+  font-weight: 500;
+}
+.end-to-end p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.end-to-end-content h5 {
+  font-weight: bold;
+}
+.end-to-end-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.title-robo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.camp-title-bg {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.title-robo img {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background: #ffc107;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.setup {
+  /* Position the navigation arrows */
+  /* Position the left arrow to the far left */
+  /* Position the right arrow to the far right */
+  /* Style the arrow icons */
+}
+.setup .owl-nav .owl-prev,
+.setup .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f8f9fa;
+  /* Background color for the arrows */
+  border-radius: 50%;
+  /* Circular button */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  /* Ensure arrows are above other elements */
+}
+.setup .owl-nav .owl-prev {
+  left: -60px;
+  /* Adjust this value to your preference */
+}
+.setup .owl-nav .owl-next {
+  right: -60px;
+  /* Adjust this value to your preference */
+}
+.setup .owl-nav .owl-prev i,
+.setup .owl-nav .owl-next i {
+  font-size: 20px;
+  /* Font size of the arrows */
+  color: #000;
+  /* Color of the arrow icons */
+}
+
+.coding-chalange h4 {
+  font-size: 36px;
+}
+
+.coding-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.coding-text p {
+  text-align: justify;
+  line-height: 26px;
+}
+
+.coding-involve {
+  background-color: #f18500;
+  color: white;
+}
+
+.coding-process .icon {
+  width: 60px;
+  height: 60px;
+  background: #f18500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.login-register-btn {
+  padding: 4px 0px;
+}
+.login-register-btn a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.login-modals .form-control {
+  background-color: #fff;
+  color: #777;
+  border-width: 1px;
+  border-color: #cccccc;
+  height: 50px;
+}
+.login-modals .submit-btn {
+  height: 50px;
+  background-color: #f18500;
+  color: #fff;
+  font-weight: 600;
+}
+.login-modals .submit-sign-up {
+  background-color: #3f3f3f;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 36px;
+}
+.login-modals .forget-password {
+  text-decoration: none;
+  color: #f18500;
+}
+.login-modals .close-btn-right {
+  background-color: #e8e8e8;
+  padding: 8px;
+}
+.login-modals .position-relative-content {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
