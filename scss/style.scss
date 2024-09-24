@@ -2,7 +2,8 @@
 $base-color: #FFD500;
 $logo-color: #f18500;
 $dark-color: #000000;
-
+$white-color: #ffffff;
+@import 'group-member';
 body {
     font-family: "Inter", sans-serif;
 }
@@ -24,7 +25,7 @@ ul {
 }
 
 span.avatar {
-    background: #f18500;
+    background: $logo-color;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -133,7 +134,7 @@ span.avatar {
     background-color: #02042b;
 
     a.active {
-        border-bottom: 5px solid #f18500;
+        border-bottom: 5px solid $logo-color;
 
     }
 
@@ -143,7 +144,7 @@ span.avatar {
                 list-style-type: none;
 
                 a {
-                    color: #fff;
+                    color: $white-color;
                     text-decoration: none;
                     margin: 20px 20px 0px 0px;
                     font-size: 16px;
@@ -163,15 +164,77 @@ span.avatar {
         background: #edf2fa;
 
         &.active {
-            background-color: #f18500;
+            background-color: $logo-color;
         }
 
     }
 
 }
 
+.groups {
+    .profile {
+        height: 80px;
+        margin-top: -60px;
+        width: 80px;
+        background-color: $white-color;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #fdfdfd;
+            border-radius: 20px;
+            padding: 5px;
+        }
+    }
+
+    .image-stack {
+        position: relative;
+        width: 80px;
+        height: 40px;
+    }
+
+    .image-stack img {
+        position: absolute;
+        width: 40px;
+        border: 2px solid $white-color;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .img1 {
+        left: 0;
+        z-index: 3;
+    }
+
+    .img2 {
+        left: 15px;
+        z-index: 2;
+    }
+
+    .img3 {
+        left: 30px;
+        z-index: 1;
+    }
+    .tulip {
+        position: absolute;
+        width: 15px; /* Adjust size as needed */
+        height: 15px; /* Adjust size as needed */
+        left: 25px;  /* Position it over the desired image */
+        top: 12px;   /* Adjust to fine-tune positioning */
+        z-index: 4;  /* Ensure the tulip appears above all images */
+      }
+}
+
 .courses {
     &__details {
+        overflow: hidden;
+        .banner {
+            height: 150px;
+            object-fit: cover;
+        }
+
         &--content {
             a {
                 font-size: 20px;
@@ -181,11 +244,12 @@ span.avatar {
             }
 
         }
-        
-           
+
+
     }
-     /* Chrome, Safari, Opera */
-     progress::-webkit-progress-bar {
+
+    /* Chrome, Safari, Opera */
+    progress::-webkit-progress-bar {
         background-color: #e0e0e0;
         /* Background of the bar */
     }
@@ -200,11 +264,13 @@ span.avatar {
         background-color: #4caf50;
         /* Color of the progress */
     }
+
     progress {
         width: 100%;
         height: 5px;
         border-radius: 50px;
-        background-color: #e0e0e0; /* Background of the bar */
+        background-color: #e0e0e0;
+        /* Background of the bar */
     }
 }
 
@@ -215,19 +281,19 @@ span.avatar {
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 15px;
-        color: #fff;
+        color: $white-color;
     }
 
     a {
         display: block;
         line-height: 36px;
         text-decoration: none;
-        color: #fff;
+        color: $white-color;
     }
 
     p {
         line-height: 30px;
-        color: #fff;
+        color: $white-color;
     }
 
     &__nav {
@@ -306,9 +372,9 @@ span.avatar {
     }
 
     .btn-submit {
-        background-color: #f18500;
-        color: #fff;
-        border: 1px solid #f18500;
+        background-color: $logo-color;
+        color: $white-color;
+        border: 1px solid $logo-color;
         font-weight: 600;
     }
 
@@ -345,7 +411,7 @@ span.avatar {
         }
 
         .bg-one {
-            background-color: #f18500;
+            background-color: $logo-color;
         }
 
         h5 {
@@ -375,7 +441,7 @@ span.avatar {
 
 .camp-title {
     background-color: $logo-color;
-    color: #fff;
+    color: $white-color;
 }
 
 .cic-approch {
@@ -410,7 +476,7 @@ span.avatar {
 
     span {
         font-size: 30px;
-        color: #ffc107;
+        color: $logo-color;
         font-weight: 500;
     }
 
@@ -445,14 +511,14 @@ span.avatar {
 
 .camp-title-bg {
     background-color: #0dcaf0;
-    color: #fff;
+    color: $white-color;
 }
 
 .title-robo img {
     width: 100%;
     -o-object-fit: contain;
     object-fit: contain;
-    background: #ffc107;
+    background: $logo-color;
 }
 
 .grid-gallery {
@@ -536,7 +602,7 @@ span.avatar {
 }
 
 .coding-involve {
-    background-color: #f18500;
+    background-color: $logo-color;
     color: white;
 }
 
@@ -544,12 +610,12 @@ span.avatar {
     .icon {
         width: 60px;
         height: 60px;
-        background: #f18500;
+        background: $logo-color;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: $white-color;
         font-size: 25px;
     }
 }
@@ -567,7 +633,7 @@ span.avatar {
 
 .login-modals {
     .form-control {
-        background-color: #fff;
+        background-color: $white-color;
         color: #777;
         border-width: 1px;
         border-color: #cccccc;
@@ -576,14 +642,14 @@ span.avatar {
 
     .submit-btn {
         height: 50px;
-        background-color: #f18500;
-        color: #fff;
+        background-color: $logo-color;
+        color: $white-color;
         font-weight: 600;
     }
 
     .submit-sign-up {
         background-color: #3f3f3f;
-        color: #fff;
+        color: $white-color;
         font-weight: 600;
         text-decoration: none;
         line-height: 36px;
@@ -591,7 +657,7 @@ span.avatar {
 
     .forget-password {
         text-decoration: none;
-        color: #f18500;
+        color: $logo-color;
     }
 
     .close-btn-right {
